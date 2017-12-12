@@ -1,0 +1,7 @@
+title: HELLO!gh-pages
+url: "https://71713.github.io/hello-ghpages"
+
+# Build settings
+markdown: kramdown
+theme: minima
+timezone: Asia/Tokyo

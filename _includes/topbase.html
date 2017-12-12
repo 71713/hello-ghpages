@@ -1,0 +1,16 @@
+<h1>{{site.title}}</h1>
+<div>
+  {{site.desc}}
+</div>
+
+{% for data in page.faqlist %}
+  <h1>{{data.title}}</h1>
+  {% for faq in data.qalist %}
+  <div class="faqlist">
+    <div class="question" id="{{faq.alink}}">Question. {{ faq.question }}</div>
+    <div class="answer">Answer. {{ faq.answer }}</div>
+  </div>
+  {% endfor %}
+{% endfor %}
+
+<div><a href="/"> {{page.backbtn}} </a></div>
